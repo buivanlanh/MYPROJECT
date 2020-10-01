@@ -19,7 +19,7 @@ $Products = $p->getProducts();
     <meta name="description" content="meta description">
 
     <!-- Site title -->
-    <title>Galio - Mega Shop Responsive Bootstrap 4 Template</title>
+    <title>Galio - Shop Thương Mại Điện Tử</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
     <!-- Bootstrap CSS -->
@@ -600,7 +600,7 @@ $Products = $p->getProducts();
                                     <?php foreach($Products as $product) { ?>
                                     <div class="product-item fix">
                                         <div class="product-thumb">
-                                            <a href="product-details.html">
+                                             <a href="#">
                                                 <img src="assets/img/<?php echo $product['avatar'] ?>" class="img-pri" alt="">
                                                 <img src="assets/img/<?php echo $product['gallery_1'] ?>" class="img-sec" alt="">
                                             </a>
@@ -620,7 +620,7 @@ $Products = $p->getProducts();
                                             </div>
                                         </div>
                                         <div class="product-content">
-                                            <h4><a href="product-details.html"><?php echo $product["ProductName"]?></a></h4>
+                                            <h4><a href="product-details.php?product_id=<?php echo $product['ID'] ?>"><?php echo $product["ProductName"]?></a></h4>
                                             <div class="pricebox">
                                                 <span class="regular-price"><?php echo number_format($product["UnitPrice"])  ?>VN</span>
                                                 <div class="ratings">
@@ -652,7 +652,7 @@ $Products = $p->getProducts();
                                     <div class="col">
                                         <div class="category-item">
                                             <div class="category-thumb">
-                                                <a href="product-details.html">
+                                                <a href="product-details.php?product_id=<?php echo $product['ID'] ?>">
                                                     <img src="assets/img/product/<?php echo $product['avatar'] ?>" alt="">
                                                 </a>
                                             </div>
@@ -791,7 +791,7 @@ $Products = $p->getProducts();
                             <div class="featured-carousel-active slick-padding slick-arrow-style">
 								<!-- product single item start -->
 								<?php foreach($Products as $product){ ?>
-                                <div class="product-item fix">
+                                    <div class="product-item fix">
                                     <div class="product-thumb">
                                         <a href="product-details.php?product_id=<?php echo $product['ID'] ?>">
                                             <img src="assets/img/product/<?php echo $product['avatar'] ?>" class="img-pri" alt="">
@@ -859,7 +859,7 @@ $Products = $p->getProducts();
 								<?php foreach($Products as $product){ ?>
 									<div class="product-item fix">
 										<div class="product-thumb">
-											<a href="product-details.html">
+											<a href="product-details.php?product_id=<?php echo $product['ID'] ?>">
 												<img src="assets/img/product/<?php echo $product['avatar'] ?>" class="img-pri" alt="">
 												<img src="assets/img/product/<?php echo $product['gallery_1'] ?>" alt="">
 											</a>
@@ -874,12 +874,12 @@ $Products = $p->getProducts();
 														class="fa fa-heart-o"></i></a>
 												<a href="#" data-toggle="tooltip" data-placement="left" title="Compare"><i
 														class="fa fa-refresh"></i></a>
-												<a href="#" data-toggle="tooltip" data-placement="left" title="Add to cart"><i
+												<a href="addcart.php?id=<?php echo $product['ID'] ?>" data-toggle="tooltip" data-placement="left" title="Add to cart"><i
 														class="fa fa-shopping-cart"></i></a>
 											</div>
 										</div>
 										<div class="product-content">
-											<h4><a href="product-details.html"><?php echo $product['ProductName'] ?></a></h4>
+											<h4><a href="product-details.php?product_id=<?php echo $product['ID'] ?>"><?php echo $product['ProductName'] ?></a></h4>
 											<div class="pricebox">
 												<span class="regular-price"><?php echo $product['UnitPrice']  ?></span>
 												<div class="ratings">
@@ -939,7 +939,7 @@ $Products = $p->getProducts();
                                             <div class="col">
                                                 <div class="category-item">
                                                     <div class="category-thumb">
-                                                        <a href="product-details.html">
+                                                        <a href="product-details.php?product_id=<?php echo $product['ID'] ?>">
                                                             <img src="assets/img/product/<?php echo $product['avatar'] ?>" alt="">
                                                         </a>
                                                     </div>
@@ -983,12 +983,12 @@ $Products = $p->getProducts();
                                             <div class="col">
                                                 <div class="category-item">
                                                     <div class="category-thumb">
-                                                        <a href="product-details.html">
+                                                        <a href="product-details.php?product_id=<?php echo $product['ID'] ?>">
                                                             <img src="assets/img/product/<?php echo $product['avatar'] ?>" alt="">
                                                         </a>
                                                     </div>
                                                     <div class="category-content">
-                                                        <h4><a href="product-details.html"><?php echo $product['ProductName'] ?></a></h4>
+                                                        <h4><a href="product-details.php?product_id=<?php echo $product['ID'] ?>"><?php echo $product['ProductName'] ?></a></h4>
                                                         <div class="price-box">
                                                             <div class="regular-price">
                                                             <?php echo $product['UnitPrice'] ?>
@@ -1027,12 +1027,12 @@ $Products = $p->getProducts();
                                             <div class="col">
                                                 <div class="category-item">
                                                     <div class="category-thumb">
-                                                        <a href="product-details.html">
+                                                        <a href="product-details.php?product_id=<?php echo $product['ID'] ?>">
                                                             <img src="assets/img/product/<?php echo $product['avatar'] ?>" alt="">
                                                         </a>
                                                     </div>
                                                     <div class="category-content">
-                                                        <h4><a href="product-details.html"><?php echo $product['ProductName'] ?></a></h4>
+                                                        <h4><a href="product-details.php?product_id=<?php echo $product['ID'] ?>"><?php echo $product['ProductName'] ?></a></h4>
                                                         <div class="price-box">
                                                             <div class="regular-price">
                                                             <?php echo $product['UnitPrice'] ?>
@@ -1083,7 +1083,7 @@ $Products = $p->getProducts();
                     <?php foreach($Products as $product){ ?>
                     <div class="product-item fix">
                         <div class="product-thumb">
-                            <a href="product-details.html">
+                            <a href="product-details.php?product_id=<?php echo $product['ID'] ?>">
                                 <img src="assets/img/product/<?php echo $product['avatar'] ?>" class="img-pri" alt="">
                                 <img src="assets/img/product/product-img2.jpg" class="img-sec" alt="">
                             </a>
@@ -1100,7 +1100,7 @@ $Products = $p->getProducts();
                             </div>
                         </div>
                         <div class="product-content">
-                            <h4><a href="product-details.html"><?php echo $product['ProductName'] ?> </a></h4>
+                            <h4><a href="product-details.php?product_id=<?php echo $product['ID'] ?>"><?php echo $product['ProductName'] ?> </a></h4>
                             <div class="pricebox">
                                 <span class="regular-price"><?php echo $product['UnitPrice'] ?></span>
                                 <div class="ratings">
@@ -1141,22 +1141,22 @@ $Products = $p->getProducts();
                     <div class="col-12">
                         <div class="brand-active slick-padding slick-arrow-style">
                             <div class="brand-item text-center">
-                                <a href="#"><img src="assets/img/brand/br1.png" alt=""></a>
+                                <a href="#"><img src="assets/img/brand/6409339255_ca00e76dee_z (1).jpg  " alt=""></a>
                             </div>
                             <div class="brand-item text-center">
-                                <a href="#"><img src="assets/img/brand/br2.png" alt=""></a>
+                                <a href="#"><img src="assets/img/brand/th.jpg" alt=""></a>
                             </div>
                             <div class="brand-item text-center">
                                 <a href="#"><img src="assets/img/brand/br3.png" alt=""></a>
                             </div>
                             <div class="brand-item text-center">
-                                <a href="#"><img src="assets/img/brand/br4.png" alt=""></a>
+                                <a href="#"><img src="assets/img/brand/th (1).jpg" alt=""></a>
                             </div>
                             <div class="brand-item text-center">
-                                <a href="#"><img src="assets/img/brand/br5.png" alt=""></a>
+                                <a href="#"><img src="assets/img/brand/1513882457293.jpg" alt=""></a>
                             </div>
                             <div class="brand-item text-center">
-                                <a href="#"><img src="assets/img/brand/br6.png" alt=""></a>
+                                <a href="#"><img src="assets/img/brand/th (3).jpg" alt=""></a>
                             </div>
                             <div class="brand-item text-center">
                                 <a href="#"><img src="assets/img/brand/br4.png" alt=""></a>
