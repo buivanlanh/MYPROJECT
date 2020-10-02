@@ -31,7 +31,7 @@ class Ecom
 			"SELECT * FROM products"
 		);
 		return $products;
-	}
+	}	
 	public function getProductById ($id)
 	{
 		$result = @mysqli_query(
@@ -51,6 +51,17 @@ class Ecom
 			return mysqli_fetch_assoc($result);
 		}
 }
+    function export_type($id){
+		$connect=$this->connect();
+		$sql="SELECT * FROM products WHERE category ID='$id'";
+		$result=mysqli_query($connect,$sql);
+		return $product;
+
+
+
+
+	}
+
 
 }
 
