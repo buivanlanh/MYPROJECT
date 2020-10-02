@@ -2,9 +2,8 @@
 include('myclass/myclass.php');
 $p = new Ecom();
 $Products = $p->getProducts();
+$categorys = $p->getcategorys();
 ?>
-
-
 
 
 <!DOCTYPE html>
@@ -263,111 +262,13 @@ $Products = $p->getProducts();
                                     </div>
                                     <nav class="category-menu hm-1">
                                         <ul>
+                                        <?php foreach($categorys as $category){  ?>
                                             <li><a href="shop-grid-left-sidebar.html"><i class="fa fa-desktop"></i>
-                                                    Máy tính</a></li>
-                                            <li class="menu-item-has-children"><a href="shop-grid-left-sidebar.html"><i
-                                                        class="fa fa-camera"></i>máy ảnh</a>
-                                                <!-- Mega Category Menu Start -->
-                                                <ul class="category-mega-menu">
-                                                    <li class="menu-item-has-children">
-                                                        <a href="shop-grid-left-sidebar.html">Điện Thoại</a>
-                                                        <ul>
-                                                            <li><a href="shop-grid-left-sidebar.html">Samsome</a></li>
-                                                            <li><a href="shop-grid-left-sidebar.html">GL Stylus</a></li>
-                                                            <li><a href="shop-grid-left-sidebar.html">Uawei</a></li>
-                                                            <li><a href="shop-grid-left-sidebar.html">Cherry Berry</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="menu-item-has-children">
-                                                        <a href="shop-grid-left-sidebar.html">Tai Nghe</a>
-                                                        <ul>
-                                                            <li><a href="shop-grid-left-sidebar.html">Desktop Headphone</a></li>
-                                                            <li><a href="shop-grid-left-sidebar.html">Mobile Headphone</a></li>
-                                                            <li><a href="shop-grid-left-sidebar.html">Wireless
-                                                                    Headphone</a></li>
-                                                            <li><a href="shop-grid-left-sidebar.html">LED Headphone</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="menu-item-has-children">
-                                                        <a href="shop-grid-left-sidebar.html">Phụ Kiện</a>
-                                                        <ul>
-                                                            <li><a href="shop-grid-left-sidebar.html">Power Bank</a></li>
-                                                            <li><a href="shop-grid-left-sidebar.html">Data Cable</a></li>
-                                                            <li><a href="shop-grid-left-sidebar.html">Power Cable</a></li>
-                                                            <li><a href="shop-grid-left-sidebar.html">Battery</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="menu-item-has-children">
-                                                        <a href="shop-grid-left-sidebar.html">Tai Nghe</a>
-                                                        <ul>
-                                                            <li><a href="shop-grid-left-sidebar.html">Desktop Headphone</a></li>
-                                                            <li><a href="shop-grid-left-sidebar.html">Mobile Headphone</a></li>
-                                                            <li><a href="shop-grid-left-sidebar.html">Wireless
-                                                                    Headphone</a></li>
-                                                            <li><a href="shop-grid-left-sidebar.html">LED Headphone</a></li>
-                                                        </ul>
-                                                    </li>
+                                                   <?php echo $category['CategoryName'] ?></a></li>
+                                                   <?php } ?>
+
                                                 </ul><!-- Mega Category Menu End -->
-                                            </li>
-                                            <li class="menu-item-has-children"><a href="shop-grid-left-sidebar.html"><i
-                                                        class="fa fa-book"></i> Điện Thoại</a>
-                                                <!-- Mega Category Menu Start -->
-                                                <ul class="category-mega-menu">
-                                                    <li class="menu-item-has-children">
-                                                        <a href="shop-grid-left-sidebar.html">Smartphone</a>
-                                                        <ul>
-                                                            <li><a href="shop-grid-left-sidebar.html">Samsome</a></li>
-                                                            <li><a href="shop-grid-left-sidebar.html">GL Stylus</a></li>
-                                                            <li><a href="shop-grid-left-sidebar.html">Uawei</a></li>
-                                                            <li><a href="shop-grid-left-sidebar.html">Cherry Berry</a></li>
-                                                            <li><a href="shop-grid-left-sidebar.html">uPhone</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="menu-item-has-children">
-                                                        <a href="shop-grid-left-sidebar.html">headphone</a>
-                                                        <ul>
-                                                            <li><a href="shop-grid-left-sidebar.html">Desktop Headphone</a></li>
-                                                            <li><a href="shop-grid-left-sidebar.html">Mobile Headphone</a></li>
-                                                            <li><a href="shop-grid-left-sidebar.html">Wireless
-                                                                    Headphone</a></li>
-                                                            <li><a href="shop-grid-left-sidebar.html">LED Headphone</a></li>
-                                                            <li><a href="shop-grid-left-sidebar.html">Over-ear</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="menu-item-has-children">
-                                                        <a href="shop-grid-left-sidebar.html">accessories</a>
-                                                        <ul>
-                                                            <li><a href="shop-grid-left-sidebar.html">Power Bank</a></li>
-                                                            <li><a href="shop-grid-left-sidebar.html">Data Cable</a></li>
-                                                            <li><a href="shop-grid-left-sidebar.html">Power Cable</a></li>
-                                                            <li><a href="shop-grid-left-sidebar.html">Battery</a></li>
-                                                            <li><a href="shop-grid-left-sidebar.html">OTG Cable</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="menu-item-has-children">
-                                                        <a href="shop-grid-left-sidebar.html">accessories</a>
-                                                        <ul>
-                                                            <li><a href="shop-grid-left-sidebar.html">Power Bank</a></li>
-                                                            <li><a href="shop-grid-left-sidebar.html">Data Cable</a></li>
-                                                            <li><a href="shop-grid-left-sidebar.html">Power Cable</a></li>
-                                                            <li><a href="shop-grid-left-sidebar.html">Battery</a></li>
-                                                            <li><a href="shop-grid-left-sidebar.html">OTG Cable</a></li>
-                                                        </ul>
-                                                    </li>
-                                                </ul><!-- Mega Category Menu End -->
-                                            </li>
-                                            <li><a href="shop-grid-left-sidebar.html"><i class="fa fa-clock-o"></i>
-                                                    Đồng Hồ</a></li>
-                                            <li><a href="shop-grid-left-sidebar.html"><i class="fa fa-television"></i>
-                                                    Thiết bị điện tử</a></li>
-                                            <li><a href="shop-grid-left-sidebar.html"><i class="fa fa-tablet"></i>
-                                                    máy tính bảng</a></li>
-                                            <li><a href="shop-grid-left-sidebar.html"><i class="fa fa-book"></i> books</a></li>
-                                            <li><a href="shop-grid-left-sidebar.html"><i class="fa fa-microchip"></i>
-                                                    microchip</a></li>
-                                            <li><a href="shop-grid-left-sidebar.html"><i class="fa fa-bullhorn"></i>
-                                                    bullhorn</a></li>
-                                        </ul>
+                                        
                                     </nav>
                                 </div>
                                 <div class="main-menu">
@@ -590,6 +491,7 @@ $Products = $p->getProducts();
                     <div class="col-lg-3">
                         <div class="home-sidebar">
                             <!-- hot deals area start -->
+
                             <div class="main-sidebar hot-deals-wrap mb-30">
                                 <div class="section-title-2 d-flex justify-content-between mb-28">
                                     <h3>hot deals</h3>
@@ -1133,7 +1035,7 @@ $Products = $p->getProducts();
                             <div class="title-icon">
                                 <i class="fa fa-crop"></i>
                             </div>
-                            <h3>Popular Brand</h3>
+                            <h3>Các hãng Sản Xuất</h3>
                         </div> <!-- section title end -->
                     </div>
                 </div>
@@ -1180,14 +1082,14 @@ $Products = $p->getProducts();
                                     <i class="fa fa-envelope"></i>
                                 </div>
                                 <div class="newsletter__content">
-                                    <h3>sign up for newsletter</h3>
-                                    <p>Duis autem vel eum iriureDuis autem vel eum</p>
+                                    <h3>Đăng Ký Nhận Bản Tin</h3>
+                                    <p>Sẽ Nhận Thư điện tử tại đây</p>
                                 </div>
                             </div>
                             <div class="newsletter__box">
                                 <form id="mc-form">
                                     <input type="email" id="mc-email" autocomplete="off" placeholder="Email">
-                                    <button id="mc-submit">subscribe!</button>
+                                    <button id="mc-submit">Đăng Ký!</button>
                                 </form>
                             </div>
                             <!-- mailchimp-alerts Start -->
@@ -1217,16 +1119,16 @@ $Products = $p->getProducts();
                         <div class="col-md-3 col-sm-6">
                             <div class="footer-widget mb-sm-30">
                                 <div class="widget-title mb-10 mb-sm-6">
-                                    <h4>contact us</h4>
+                                    <h4>Liên Hệ</h4>
                                 </div>
                                 <div class="widget-body">
                                     <ul class="location">
                                         <li><i class="fa fa-envelope"></i>support@galio.com</li>
                                         <li><i class="fa fa-phone"></i>(800) 0123 456 789</li>
-                                        <li><i class="fa fa-map-marker"></i>Address: 1234 - Bandit Tringi Aliquam
-                                            Vitae. New York</li>
+                                        <li><i class="fa fa-map-marker"></i>Address: 12- Nguyễn Văn Bảo
+                                            Phường3 Quận gò Vấp . TPHCM</li>
                                     </ul>
-                                    <a class="map-btn" href="contact-us.html">open in google map</a>
+                                    <a class="map-btn" href="contact-us.html">Mở Trong google map</a>
                                 </div>
                             </div> <!-- single widget end -->
                         </div> <!-- single widget column end -->
@@ -1237,11 +1139,11 @@ $Products = $p->getProducts();
                                 </div>
                                 <div class="widget-body">
                                     <ul>
-                                        <li><a href="#">my account</a></li>
-                                        <li><a href="#">my cart</a></li>
-                                        <li><a href="#">checkout</a></li>
-                                        <li><a href="#">my wishlist</a></li>
-                                        <li><a href="#">login</a></li>
+                                        <li><a href="#">Tài Khoản Của Tôi</a></li>
+                                        <li><a href="#">Giỏ Hàng Của Tôi</a></li>
+                                        <li><a href="#">Thanh Toán</a></li>
+                                        <li><a href="#">Sản Phẩm Yêu Thích</a></li>
+                                        <li><a href="#">Đăng Nhập</a></li>
                                     </ul>
                                 </div>
                             </div> <!-- single widget end -->
@@ -1249,15 +1151,15 @@ $Products = $p->getProducts();
                         <div class="col-md-3 col-sm-6">
                             <div class="footer-widget mb-sm-30">
                                 <div class="widget-title mb-10 mb-sm-6">
-                                    <h4>short code</h4>
+                                    <h4>mã Ngắn</h4>
                                 </div>
                                 <div class="widget-body">
                                     <ul>
-                                        <li><a href="#">gallery</a></li>
+                                        <li><a href="#">bộ sưu tập</a></li>
                                         <li><a href="#">accordion</a></li>
-                                        <li><a href="#">carousel</a></li>
-                                        <li><a href="#">map</a></li>
-                                        <li><a href="#">tab</a></li>
+                                        <li><a href="#">Băng Chuyền</a></li>
+                                        <li><a href="#">Bản Đồ</a></li>
+                                        <li><a href="#">Chuyển Hướng</a></li>
                                     </ul>
                                 </div>
                             </div> <!-- single widget end -->
@@ -1265,15 +1167,15 @@ $Products = $p->getProducts();
                         <div class="col-md-3 col-sm-6">
                             <div class="footer-widget mb-sm-30">
                                 <div class="widget-title mb-10 mb-sm-6">
-                                    <h4>product tags</h4>
+                                    <h4> Sản Phẩm   </h4>
                                 </div>
                                 <div class="widget-body">
                                     <ul>
-                                        <li><a href="#">computer</a></li>
+                                        <li><a href="#">Máy tính</a></li>
                                         <li><a href="#">camera</a></li>
-                                        <li><a href="#">smart phone</a></li>
-                                        <li><a href="#">watch</a></li>
-                                        <li><a href="#">tablet</a></li>
+                                        <li><a href="#">Điện Thoại</a></li>
+                                        <li><a href="#">Đồng Hồ</a></li>
+                                        <li><a href="#">Máy Tính Bảng</a></li>
                                     </ul>
                                 </div>
                             </div> <!-- single widget end -->
