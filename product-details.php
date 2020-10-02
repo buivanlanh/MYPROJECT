@@ -89,9 +89,11 @@ $product = $p->getProductById($id);
     </div>
     <!-- color switcher end -->
 
-    <div class="wrapper box-layout">
+    <div class="wrapper">
+
         <!-- header area start -->
         <header>
+
             <!-- header top start -->
             <div class="header-top-area bg-gray text-center text-md-left">
                 <div class="container">
@@ -114,25 +116,26 @@ $product = $p->getProductById($id);
                                     <ul>
                                         <li>
                                             <div class="dropdown header-top-dropdown">
-                                                <a class="dropdown-toggle" id="myaccount" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    my account
+                                                <a class="dropdown-toggle" id="myaccount" data-toggle="dropdown"
+                                                    aria-haspopup="true" aria-expanded="false">
+                                                    Tài Khoản
                                                     <i class="fa fa-angle-down"></i>
                                                 </a>
                                                 <div class="dropdown-menu" aria-labelledby="myaccount">
-                                                    <a class="dropdown-item" href="my-account.html">my account</a>
-                                                    <a class="dropdown-item" href="login-register.html"> login</a>
-                                                    <a class="dropdown-item" href="login-register.html">register</a>
+                                                    <a class="dropdown-item" href="my-account.html">Tài Khoản</a>
+                                                    <a class="dropdown-item" href="login-register.html"> Đăng Nhập</a>
+                                                    <a class="dropdown-item" href="login-register.html">Đăng Ký</a>
                                                 </div>
                                             </div>
                                         </li>
                                         <li>
-                                            <a href="#">my wishlist</a>
+                                            <a href="#">Sản phẩm yêu thích</a>
                                         </li>
                                         <li>
-                                            <a href="#">my cart</a>
+                                            <a href="cart.php">Giỏ hàng của tôi</a>
                                         </li>
                                         <li>
-                                            <a href="#">checkout</a>
+                                            <a href="#">thanh toán</a>
                                         </li>
                                     </ul>
                                 </nav>
@@ -149,7 +152,7 @@ $product = $p->getProductById($id);
                     <div class="row align-items-center">
                         <div class="col-lg-3">
                             <div class="brand-logo">
-                                <a href="index.html">
+                                <a href="index.php">
                                     <img src="assets/img/logo/logo.png" alt="brand logo">
                                 </a>
                             </div>
@@ -162,8 +165,8 @@ $product = $p->getProductById($id);
                                             <i class="fa fa-clock-o"></i>
                                         </div>
                                         <div class="shipping-content">
-                                            <h5>Working time</h5>
-                                            <span>Mon- Sun: 8.00 - 18.00</span>
+                                            <h5>Giờ làm việc</h5>
+                                            <span>Thứ 2-7 8.00-22.00</span>
                                         </div>
                                     </div> <!-- end single shipping -->
                                     <div class="single-block-shipping">
@@ -171,8 +174,8 @@ $product = $p->getProductById($id);
                                             <i class="fa fa-truck"></i>
                                         </div>
                                         <div class="shipping-content">
-                                            <h5>free shipping</h5>
-                                            <span>On order over $199</span>
+                                            <h5>Miễn Phí Giao Hàng</h5>
+                                            <span>Đơn hàng trên 500VNĐ</span>
                                         </div>
                                     </div> <!-- end single shipping -->
                                     <div class="single-block-shipping">
@@ -180,8 +183,8 @@ $product = $p->getProductById($id);
                                             <i class="fa fa-money"></i>
                                         </div>
                                         <div class="shipping-content">
-                                            <h5>money back 100%</h5>
-                                            <span>Within 30 Days after delivery</span>
+                                            <h5>Hoàn tiền 100%</h5>
+                                            <span>Trong vòng 30 ngày </span>
                                         </div>
                                     </div> <!-- end single shipping -->
                                 </div>
@@ -196,17 +199,18 @@ $product = $p->getProductById($id);
                                             <span class="cart-notification">2</span>
                                         </div>
                                         <div class="cart-total-price">
-                                            <span>total</span>
-                                            $50.00
+                                            <span>Tổng tiền</span>
+                                            500.000VNĐ
                                         </div>
                                         <ul class="cart-list">
                                             <li>
                                                 <div class="cart-img">
-                                                    <a href="product-details.html"><img src="assets/img/cart/cart-1.jpg" alt=""></a>
+                                                    <a href="product-details.html"><img src="assets/img/cart/cart-1.jpg"
+                                                            alt=""></a>
                                                 </div>
                                                 <div class="cart-info">
-                                                    <h4><a href="product-details.html">simple product 09</a></h4>
-                                                    <span>$60.00</span>
+                                                    <h4><a href="product-details.html">Sản Phẩm mẫu</a></h4>
+                                                    <span>2.000.000VNĐ</span>
                                                 </div>
                                                 <div class="del-icon">
                                                     <i class="fa fa-times"></i>
@@ -214,22 +218,23 @@ $product = $p->getProductById($id);
                                             </li>
                                             <li>
                                                 <div class="cart-img">
-                                                    <a href="product-details.html"><img src="assets/img/cart/cart-2.jpg" alt=""></a>
+                                                    <a href="product-details.html"><img src="assets/img/cart/cart-2.jpg"
+                                                            alt=""></a>
                                                 </div>
                                                 <div class="cart-info">
-                                                    <h4><a href="product-details.html">virtual product 10</a></h4>
-                                                    <span>$50.00</span>
+                                                    <h4><a href="product-details.html">Sản Phẩm Ảo</a></h4>
+                                                    <span>1.000.000VNĐ</span>
                                                 </div>
                                                 <div class="del-icon">
                                                     <i class="fa fa-times"></i>
                                                 </div>
                                             </li>
                                             <li class="mini-cart-price">
-                                                <span class="subtotal">subtotal : </span>
-                                                <span class="subtotal-price">$88.66</span>
+                                                <span class="subtotal">Tổng Phụ : </span>
+                                                <span class="subtotal-price">4.000.000VNĐ</span>
                                             </li>
                                             <li class="checkout-btn">
-                                                <a href="#">checkout</a>
+                                                <a href="#">Thủ tục thanh toán</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -249,19 +254,21 @@ $product = $p->getProductById($id);
                             <div class="main-header-inner">
                                 <div class="category-toggle-wrap">
                                     <div class="category-toggle">
-                                        category
+                                        Loại
                                         <div class="cat-icon">
                                             <i class="fa fa-angle-down"></i>
                                         </div>
                                     </div>
-                                    <nav class="category-menu category-style-2">
+                                    <nav class="category-menu hm-1">
                                         <ul>
-                                            <li><a href="shop-grid-left-sidebar.html"><i class="fa fa-desktop"></i> computer</a></li>
-                                            <li class="menu-item-has-children"><a href="shop-grid-left-sidebar.html"><i class="fa fa-camera"></i> camera</a>   
+                                            <li><a href="shop-grid-left-sidebar.html"><i class="fa fa-desktop"></i>
+                                                    Máy tính</a></li>
+                                            <li class="menu-item-has-children"><a href="shop-grid-left-sidebar.html"><i
+                                                        class="fa fa-camera"></i>máy ảnh</a>
                                                 <!-- Mega Category Menu Start -->
                                                 <ul class="category-mega-menu">
                                                     <li class="menu-item-has-children">
-                                                        <a href="shop-grid-left-sidebar.html">Smartphone</a>
+                                                        <a href="shop-grid-left-sidebar.html">Điện Thoại</a>
                                                         <ul>
                                                             <li><a href="shop-grid-left-sidebar.html">Samsome</a></li>
                                                             <li><a href="shop-grid-left-sidebar.html">GL Stylus</a></li>
@@ -270,16 +277,17 @@ $product = $p->getProductById($id);
                                                         </ul>
                                                     </li>
                                                     <li class="menu-item-has-children">
-                                                        <a href="shop-grid-left-sidebar.html">headphone</a>
+                                                        <a href="shop-grid-left-sidebar.html">Tai Nghe</a>
                                                         <ul>
                                                             <li><a href="shop-grid-left-sidebar.html">Desktop Headphone</a></li>
                                                             <li><a href="shop-grid-left-sidebar.html">Mobile Headphone</a></li>
-                                                            <li><a href="shop-grid-left-sidebar.html">Wireless Headphone</a></li>
+                                                            <li><a href="shop-grid-left-sidebar.html">Wireless
+                                                                    Headphone</a></li>
                                                             <li><a href="shop-grid-left-sidebar.html">LED Headphone</a></li>
                                                         </ul>
                                                     </li>
                                                     <li class="menu-item-has-children">
-                                                        <a href="shop-grid-left-sidebar.html">accessories</a>
+                                                        <a href="shop-grid-left-sidebar.html">Phụ Kiện</a>
                                                         <ul>
                                                             <li><a href="shop-grid-left-sidebar.html">Power Bank</a></li>
                                                             <li><a href="shop-grid-left-sidebar.html">Data Cable</a></li>
@@ -288,17 +296,19 @@ $product = $p->getProductById($id);
                                                         </ul>
                                                     </li>
                                                     <li class="menu-item-has-children">
-                                                        <a href="shop-grid-left-sidebar.html">headphone</a>
+                                                        <a href="shop-grid-left-sidebar.html">Tai Nghe</a>
                                                         <ul>
                                                             <li><a href="shop-grid-left-sidebar.html">Desktop Headphone</a></li>
                                                             <li><a href="shop-grid-left-sidebar.html">Mobile Headphone</a></li>
-                                                            <li><a href="shop-grid-left-sidebar.html">Wireless Headphone</a></li>
+                                                            <li><a href="shop-grid-left-sidebar.html">Wireless
+                                                                    Headphone</a></li>
                                                             <li><a href="shop-grid-left-sidebar.html">LED Headphone</a></li>
                                                         </ul>
                                                     </li>
-                                                </ul><!-- Mega Category Menu End --> 
+                                                </ul><!-- Mega Category Menu End -->
                                             </li>
-                                            <li class="menu-item-has-children"><a href="shop-grid-left-sidebar.html"><i class="fa fa-book"></i> smart phones</a> 
+                                            <li class="menu-item-has-children"><a href="shop-grid-left-sidebar.html"><i
+                                                        class="fa fa-book"></i> Điện Thoại</a>
                                                 <!-- Mega Category Menu Start -->
                                                 <ul class="category-mega-menu">
                                                     <li class="menu-item-has-children">
@@ -316,7 +326,8 @@ $product = $p->getProductById($id);
                                                         <ul>
                                                             <li><a href="shop-grid-left-sidebar.html">Desktop Headphone</a></li>
                                                             <li><a href="shop-grid-left-sidebar.html">Mobile Headphone</a></li>
-                                                            <li><a href="shop-grid-left-sidebar.html">Wireless Headphone</a></li>
+                                                            <li><a href="shop-grid-left-sidebar.html">Wireless
+                                                                    Headphone</a></li>
                                                             <li><a href="shop-grid-left-sidebar.html">LED Headphone</a></li>
                                                             <li><a href="shop-grid-left-sidebar.html">Over-ear</a></li>
                                                         </ul>
@@ -343,19 +354,24 @@ $product = $p->getProductById($id);
                                                     </li>
                                                 </ul><!-- Mega Category Menu End -->
                                             </li>
-                                            <li><a href="shop-grid-left-sidebar.html"><i class="fa fa-clock-o"></i> watch</a></li>
-                                            <li><a href="shop-grid-left-sidebar.html"><i class="fa fa-television"></i> electronic</a></li>
-                                            <li><a href="shop-grid-left-sidebar.html"><i class="fa fa-tablet"></i> tablet</a></li>
+                                            <li><a href="shop-grid-left-sidebar.html"><i class="fa fa-clock-o"></i>
+                                                    Đồng Hồ</a></li>
+                                            <li><a href="shop-grid-left-sidebar.html"><i class="fa fa-television"></i>
+                                                    Thiết bị điện tử</a></li>
+                                            <li><a href="shop-grid-left-sidebar.html"><i class="fa fa-tablet"></i>
+                                                    máy tính bảng</a></li>
                                             <li><a href="shop-grid-left-sidebar.html"><i class="fa fa-book"></i> books</a></li>
-                                            <li><a href="shop-grid-left-sidebar.html"><i class="fa fa-microchip"></i> microchip</a></li>
-                                            <li><a href="shop-grid-left-sidebar.html"><i class="fa fa-bullhorn"></i> bullhorn</a></li>
+                                            <li><a href="shop-grid-left-sidebar.html"><i class="fa fa-microchip"></i>
+                                                    microchip</a></li>
+                                            <li><a href="shop-grid-left-sidebar.html"><i class="fa fa-bullhorn"></i>
+                                                    bullhorn</a></li>
                                         </ul>
                                     </nav>
                                 </div>
                                 <div class="main-menu">
                                     <nav id="mobile-menu">
                                         <ul>
-                                            <li class="active"><a href="#"><i class="fa fa-home"></i>Home <i class="fa fa-angle-down"></i></a>
+                                            <li class="active"><a href="#"><i class="fa fa-home"></i>Trang Chủ<i class="fa fa-angle-down"></i></a>
                                                 <ul class="dropdown">
                                                     <li><a href="index.html">Home version 01</a></li>
                                                     <li><a href="index-2.html">Home version 02</a></li>
@@ -363,24 +379,30 @@ $product = $p->getProductById($id);
                                                     <li><a href="index-4.html">Home version 04</a></li>
                                                 </ul>
                                             </li>
-                                            <li class="static"><a href="#">pages <i class="fa fa-angle-down"></i></a>
+                                            <li class="static"><a href="#">Trang<i class="fa fa-angle-down"></i></a>
                                                 <ul class="megamenu dropdown">
                                                     <li class="mega-title"><a href="#">column 01</a>
                                                         <ul>
-                                                            <li><a href="shop-grid-left-sidebar.html">shop grid left sidebar</a></li>
-                                                            <li><a href="shop-grid-right-sidebar.html">shop grid right sidebar</a></li>
-                                                            <li><a href="shop-grid-full-3-col.html">shop grid full 3 column</a></li>
-                                                            <li><a href="shop-grid-full-4-col.html">shop grid full 4 column</a></li>
+                                                            <li><a href="shop-grid-left-sidebar.html">shop grid left
+                                                                    sidebar</a></li>
+                                                            <li><a href="shop-grid-right-sidebar.html">shop grid right
+                                                                    sidebar</a></li>
+                                                            <li><a href="shop-grid-full-3-col.html">shop grid full 3
+                                                                    column</a></li>
+                                                            <li><a href="shop-grid-full-4-col.html">shop grid full 4
+                                                                    column</a></li>
                                                         </ul>
                                                     </li>
                                                     <li class="mega-title"><a href="#">column 02</a>
                                                         <ul>
                                                             <li><a href="product-details.html">product details</a></li>
-                                                            <li><a href="product-details-affiliate.html">product details
+                                                            <li><a href="product-details-affiliate.html">product
+                                                                    details
                                                                     affiliate</a></li>
                                                             <li><a href="product-details-variable.html">product details
                                                                     variable</a></li>
-                                                            <li><a href="product-details-group.html">product details group</a></li>
+                                                            <li><a href="product-details-group.html">product details
+                                                                    group</a></li>
                                                         </ul>
                                                     </li>
                                                     <li class="mega-title"><a href="#">column 03</a>
@@ -405,30 +427,41 @@ $product = $p->getProductById($id);
                                                 <ul class="dropdown">
                                                     <li><a href="#">shop grid layout <i class="fa fa-angle-right"></i></a>
                                                         <ul class="dropdown">
-                                                            <li><a href="shop-grid-left-sidebar.html">shop grid left sidebar</a></li>
-                                                            <li><a href="shop-grid-left-sidebar-3-col.html">left sidebar 3 col</a></li>
-                                                            <li><a href="shop-grid-right-sidebar.html">shop grid right sidebar</a></li>
-                                                            <li><a href="shop-grid-right-sidebar-3-col.html">grid right sidebar 3 col</a></li>
-                                                            <li><a href="shop-grid-full-3-col.html">shop grid full 3 column</a></li>
-                                                            <li><a href="shop-grid-full-4-col.html">shop grid full 4 column</a></li>
+                                                            <li><a href="shop-grid-left-sidebar.html">shop grid left
+                                                                    sidebar</a></li>
+                                                            <li><a href="shop-grid-left-sidebar-3-col.html">left
+                                                                    sidebar 3 col</a></li>
+                                                            <li><a href="shop-grid-right-sidebar.html">shop grid right
+                                                                    sidebar</a></li>
+                                                            <li><a href="shop-grid-right-sidebar-3-col.html">grid right
+                                                                    sidebar 3 col</a></li>
+                                                            <li><a href="shop-grid-full-3-col.html">shop grid full 3
+                                                                    column</a></li>
+                                                            <li><a href="shop-grid-full-4-col.html">shop grid full 4
+                                                                    column</a></li>
                                                         </ul>
                                                     </li>
                                                     <li><a href="#">shop list layout <i class="fa fa-angle-right"></i></a>
                                                         <ul class="dropdown">
-                                                            <li><a href="shop-list-left-sidebar.html">shop list left sidebar</a></li>
-                                                            <li><a href="shop-list-right-sidebar.html">shop list right sidebar</a></li>
+                                                            <li><a href="shop-list-left-sidebar.html">shop list left
+                                                                    sidebar</a></li>
+                                                            <li><a href="shop-list-right-sidebar.html">shop list right
+                                                                    sidebar</a></li>
                                                             <li><a href="shop-list-full.html">shop list full width</a></li>
                                                         </ul>
                                                     </li>
                                                     <li><a href="#">products details <i class="fa fa-angle-right"></i></a>
                                                         <ul class="dropdown">
                                                             <li><a href="product-details.html">product details</a></li>
-                                                            <li><a href="product-details-affiliate.html">product details
-                                                                affiliate</a></li>
+                                                            <li><a href="product-details-affiliate.html">product
+                                                                    details
+                                                                    affiliate</a></li>
                                                             <li><a href="product-details-variable.html">product details
-                                                                variable</a></li>
-                                                            <li><a href="product-details-group.html">product details group</a></li>
-                                                            <li><a href="product-details-box.html">product details box slider</a></li>
+                                                                    variable</a></li>
+                                                            <li><a href="product-details-group.html">product details
+                                                                    group</a></li>
+                                                            <li><a href="product-details-box.html">product details box
+                                                                    slider</a></li>
                                                         </ul>
                                                     </li>
                                                 </ul>
@@ -446,13 +479,15 @@ $product = $p->getProductById($id);
                                                     <li><a href="blog-details-image.html">blog details image</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="contact-us.html">Contact us</a></li>
+                                            <li><a href="contact-us.html">Liên hệ chúng tôi</a></li>
                                         </ul>
                                     </nav>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 d-block d-lg-none"><div class="mobile-menu"></div></div>
+                        <div class="col-12 d-block d-lg-none">
+                            <div class="mobile-menu"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1196,7 +1231,7 @@ $product = $p->getProductById($id);
         <!-- product details wrapper end -->
 
         <!-- brand area start -->
-        <div class="brand-area pt-28 pb-30 pt-md-14 pt-sm-14">
+        <div class="brand-area pt-28 pb-30">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -1204,7 +1239,7 @@ $product = $p->getProductById($id);
                             <div class="title-icon">
                                 <i class="fa fa-crop"></i>
                             </div>
-                            <h3>Popular Brand</h3>
+                            <h3>Các hãng Sản Xuất</h3>
                         </div> <!-- section title end -->
                     </div>
                 </div>
@@ -1212,22 +1247,22 @@ $product = $p->getProductById($id);
                     <div class="col-12">
                         <div class="brand-active slick-padding slick-arrow-style">
                             <div class="brand-item text-center">
-                                <a href="#"><img src="assets/img/brand/br1.png" alt=""></a>
+                                <a href="#"><img src="assets/img/brand/6409339255_ca00e76dee_z (1).jpg  " alt=""></a>
                             </div>
                             <div class="brand-item text-center">
-                                <a href="#"><img src="assets/img/brand/br2.png" alt=""></a>
+                                <a href="#"><img src="assets/img/brand/th.jpg" alt=""></a>
                             </div>
                             <div class="brand-item text-center">
                                 <a href="#"><img src="assets/img/brand/br3.png" alt=""></a>
                             </div>
                             <div class="brand-item text-center">
-                                <a href="#"><img src="assets/img/brand/br4.png" alt=""></a>
+                                <a href="#"><img src="assets/img/brand/th (1).jpg" alt=""></a>
                             </div>
                             <div class="brand-item text-center">
-                                <a href="#"><img src="assets/img/brand/br5.png" alt=""></a>
+                                <a href="#"><img src="assets/img/brand/1513882457293.jpg" alt=""></a>
                             </div>
                             <div class="brand-item text-center">
-                                <a href="#"><img src="assets/img/brand/br6.png" alt=""></a>
+                                <a href="#"><img src="assets/img/brand/th (3).jpg" alt=""></a>
                             </div>
                             <div class="brand-item text-center">
                                 <a href="#"><img src="assets/img/brand/br4.png" alt=""></a>
@@ -1251,16 +1286,23 @@ $product = $p->getProductById($id);
                                     <i class="fa fa-envelope"></i>
                                 </div>
                                 <div class="newsletter__content">
-                                    <h3>sign up for newsletter</h3>
-                                    <p>Duis autem vel eum iriureDuis autem vel eum</p>
+                                    <h3>Đăng Ký Nhận Bản Tin</h3>
+                                    <p>Sẽ Nhận Thư điện tử tại đây</p>
                                 </div>
                             </div>
                             <div class="newsletter__box">
                                 <form id="mc-form">
                                     <input type="email" id="mc-email" autocomplete="off" placeholder="Email">
-                                    <button id="mc-submit">subscribe!</button>
+                                    <button id="mc-submit">Đăng Ký!</button>
                                 </form>
                             </div>
+                            <!-- mailchimp-alerts Start -->
+                            <div class="mailchimp-alerts">
+                                <div class="mailchimp-submitting"></div><!-- mailchimp-submitting end -->
+                                <div class="mailchimp-success"></div><!-- mailchimp-success end -->
+                                <div class="mailchimp-error"></div><!-- mailchimp-error end -->
+                            </div>
+                            <!-- mailchimp-alerts end -->
                         </div>
                         <div class="social-icons">
                             <a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a>
@@ -1281,15 +1323,16 @@ $product = $p->getProductById($id);
                         <div class="col-md-3 col-sm-6">
                             <div class="footer-widget mb-sm-30">
                                 <div class="widget-title mb-10 mb-sm-6">
-                                    <h4>contact us</h4>
+                                    <h4>Liên Hệ</h4>
                                 </div>
                                 <div class="widget-body">
                                     <ul class="location">
                                         <li><i class="fa fa-envelope"></i>support@galio.com</li>
                                         <li><i class="fa fa-phone"></i>(800) 0123 456 789</li>
-                                        <li><i class="fa fa-map-marker"></i>Address:  1234 - Bandit Tringi Aliquam Vitae. New York</li>
+                                        <li><i class="fa fa-map-marker"></i>Address: 12- Nguyễn Văn Bảo
+                                            Phường3 Quận gò Vấp . TPHCM</li>
                                     </ul>
-                                    <a class="map-btn" href="contact-us.html">open in google map</a>
+                                    <a class="map-btn" href="contact-us.html">Mở Trong google map</a>
                                 </div>
                             </div> <!-- single widget end -->
                         </div> <!-- single widget column end -->
@@ -1300,11 +1343,11 @@ $product = $p->getProductById($id);
                                 </div>
                                 <div class="widget-body">
                                     <ul>
-                                        <li><a href="#">my account</a></li>
-                                        <li><a href="#">my cart</a></li>
-                                        <li><a href="#">checkout</a></li>
-                                        <li><a href="#">my wishlist</a></li>
-                                        <li><a href="#">login</a></li>
+                                        <li><a href="#">Tài Khoản Của Tôi</a></li>
+                                        <li><a href="#">Giỏ Hàng Của Tôi</a></li>
+                                        <li><a href="#">Thanh Toán</a></li>
+                                        <li><a href="#">Sản Phẩm Yêu Thích</a></li>
+                                        <li><a href="#">Đăng Nhập</a></li>
                                     </ul>
                                 </div>
                             </div> <!-- single widget end -->
@@ -1312,15 +1355,15 @@ $product = $p->getProductById($id);
                         <div class="col-md-3 col-sm-6">
                             <div class="footer-widget mb-sm-30">
                                 <div class="widget-title mb-10 mb-sm-6">
-                                    <h4>short code</h4>
+                                    <h4>mã Ngắn</h4>
                                 </div>
                                 <div class="widget-body">
                                     <ul>
-                                        <li><a href="#">gallery</a></li>
+                                        <li><a href="#">bộ sưu tập</a></li>
                                         <li><a href="#">accordion</a></li>
-                                        <li><a href="#">carousel</a></li>
-                                        <li><a href="#">map</a></li>
-                                        <li><a href="#">tab</a></li>
+                                        <li><a href="#">Băng Chuyền</a></li>
+                                        <li><a href="#">Bản Đồ</a></li>
+                                        <li><a href="#">Chuyển Hướng</a></li>
                                     </ul>
                                 </div>
                             </div> <!-- single widget end -->
@@ -1328,15 +1371,15 @@ $product = $p->getProductById($id);
                         <div class="col-md-3 col-sm-6">
                             <div class="footer-widget mb-sm-30">
                                 <div class="widget-title mb-10 mb-sm-6">
-                                    <h4>product tags</h4>
+                                    <h4> Sản Phẩm   </h4>
                                 </div>
                                 <div class="widget-body">
                                     <ul>
-                                        <li><a href="#">computer</a></li>
+                                        <li><a href="#">Máy tính</a></li>
                                         <li><a href="#">camera</a></li>
-                                        <li><a href="#">smart phone</a></li>
-                                        <li><a href="#">watch</a></li>
-                                        <li><a href="#">tablet</a></li>
+                                        <li><a href="#">Điện Thoại</a></li>
+                                        <li><a href="#">Đồng Hồ</a></li>
+                                        <li><a href="#">Máy Tính Bảng</a></li>
                                     </ul>
                                 </div>
                             </div> <!-- single widget end -->
