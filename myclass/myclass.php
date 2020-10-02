@@ -61,6 +61,14 @@ class Ecom
 
 
 	}
+	function getcategorys()
+	{
+		$category = @mysqli_query(
+			$this->connect(),
+			"SELECT * FROM category"
+		);
+		return $category;
+	}	
 
 
 }
